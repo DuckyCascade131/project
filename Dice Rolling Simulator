@@ -1,0 +1,18 @@
+import random
+
+choice="Y"
+score=0
+
+while(choice=="Y" or choice=="y"):
+    user=int(input("Enter a num betwee 1 to 6:"))
+    dice=random.randint(1,6)
+    print("Dice :",dice)
+    if(dice==user):
+        print("You win !")
+        score+=10
+    else:
+        print("You lose !")
+    print("Score :",score)
+    choice=input("You want to continue ? Y/N:")
+    
+print("Good bye !")
